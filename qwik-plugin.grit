@@ -1,6 +1,7 @@
-`console.log("Hello world!")` where {
+`$fn($args)` where {
+    $fn <: `Object.assign`,
     register_diagnostic(
-        span = $,
-        message = "This is from the plugin! Found a console.log call"
+        span = $fn,
+        message = "Prefer object spread instead of `Object.assign()`"
     )
 }
