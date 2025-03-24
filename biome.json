@@ -6,6 +6,7 @@
 		"useIgnoreFile": false
 	},
 	"files": {
+		"includes": ["./src/**/*"],
 		"ignoreUnknown": false
 	},
 	"formatter": {
@@ -22,5 +23,6 @@
 		"formatter": {
 			"quoteStyle": "double"
 		}
-	}
+	},
+	"plugins": ["./qwik-plugin.grit"]
 }

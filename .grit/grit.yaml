@@ -1,0 +1,10 @@
+patterns:
+  - name: console_log_check
+    source: |
+      `console.log("Hello world!")` where {
+          register_diagnostic(
+              span = $,
+              message = "This is from the plugin! Found a console.log call"
+          ),
+          not within or { `it($_, $_)`, `test($_, $_)`, `describe($_, $_)` }
+      }

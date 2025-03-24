@@ -1,0 +1,6 @@
+`console.log("Hello world!")` where {
+    register_diagnostic(
+        span = $,
+        message = "This is from the plugin! Found a console.log call"
+    )
+}
