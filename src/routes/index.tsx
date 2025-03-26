@@ -1,8 +1,10 @@
-import { component$ } from "@builder.io/qwik";
+import { component$, useVisibleTask$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 
 export default component$(() => {
-  Object.assign({}, { a: 1, b: 2 });
+	useVisibleTask$(() => {
+		console.log("visible task");
+	});
 
 	return (
 		<>

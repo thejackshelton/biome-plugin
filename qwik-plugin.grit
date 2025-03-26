@@ -1,7 +1,6 @@
-`$fn($args)` where {
-    $fn <: `Object.assign`,
+`useVisibleTask$($args)` where {
     register_diagnostic(
-        span = $fn,
-        message = "Prefer object spread instead of `Object.assign()`"
+        span = `useVisibleTask$`,
+        message = "Don't use visible task pls"
     )
 }
